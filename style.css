@@ -1,0 +1,26 @@
+body {
+  background-color: #203;
+  color:white;
+}
+
+.box {
+  float:left;
+  min-height: 310px;
+  width: 220px;
+  border: 3px solid white;
+}
+#measure {
+  clear:both;
+  border: 3px solid white;
+  width: 445px;
+  min-height: 100px;
+}
+#frequencies {
+  border: 3px solid white;
+  width:445px;
+  min-height:500px
+}
+#one_table {
+  width:50%;
+  float:left;
+}

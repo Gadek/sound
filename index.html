@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zabaw się dźwiękiem</title>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" src="libraries/p5.sound.js"></script>
+  <<script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">
+          <p>Podaj częstotliwość</p>
+          <input id="inputFirst">
+          <p>Grana częstotliwość: <span id="frequencyF"></span> Hz</p>
+          <p>Ustaw głośność:</p>
+          <div id="volFirst"></div>
+          <p>Ustaw częstotliwość:</p>
+          <div id="freqFirst"></div>
+          <div id="changeFirst"></div>
+          <div id="playFirst"></div>
+        </div>
+        <div class="box">
+          <p>Podaj częstotliwość</p>
+          <input id="inputSecond">
+          <p>Grana częstotliwość: <span id="frequencyS"></span> Hz</p>
+          <p>Ustaw głośność:</p>
+          <div id="volSecond"></div>
+          <p>Ustaw częstotliwość:</p>
+          <div id="freqSecond"></div>
+          <div id="changeSecond"></div>
+          <div id="playSecond"></div>
+        </div>
+        <div id="measure">
+          <p>Podaj, w jakim stosunku mają być częstotliwości tych dźwięków:</p>
+          <input id="setRatio">
+          <p>Stosunek częstotliwości obu dźwięków: <span id="ratio"></span></p>
+        </div>
+        <div id="frequencies">
+          <div id="one_table">
+            <p>Częstotliwości w stroju równomiernie temperowanym[Hz]
+            <br>2^(1/12) ~ 1.05946309436</p>
+            <table>
+              <tr>
+                <td>c1</td>
+                <td>261,6</td>
+              </tr>
+              <tr>
+                <td>c#1</td>
+                <td>277,2</td>
+              </tr>
+              <tr>
+                <td>d1</td>
+                <td>293,7</td>
+              </tr>
+              <tr>
+                <td>d#1</td>
+                <td>311,2</td>
+              </tr>
+              <tr>
+                <td>e1</td>
+                <td>329,6</td>
+              </tr>
+              <tr>
+                <td>f1</td>
+                <td>349,2</td>
+              </tr>
+              <tr>
+                <td>f#1</td>
+                <td>370</td>
+              </tr>
+              <tr>
+                <td>g1</td>
+                <td>391,9</td>
+              </tr>
+              <tr>
+                <td>g#1</td>
+                <td>415,2</td>
+              </tr>
+              <tr>
+                <td>a1</td>
+                <td>440</td>
+              </tr>
+              <tr>
+                <td>a#1</td>
+                <td>466,2</td>
+              </tr>
+              <tr>
+                <td>h1</td>
+                <td>493,9</td>
+              </tr>
+              <tr>
+                <td>c2</td>
+                <td>523,2</td>
+              </tr>
+              <tr>
+                <td>c#2</td>
+                <td>554,3</td>
+              </tr>
+              <tr>
+                <td>d2</td>
+                <td>587,25</td>
+              </tr>
+              <tr>
+                <td>d#2</td>
+                <td>622.15</td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="two_table">
+            <p>Stosunki interwałów w skali naturalnej</p>
+            <table>
+              <tr>
+                <td>1</td>
+                <td>1/1</td>
+              </tr>
+              <tr>
+                <td>2></td>
+                <td>16/15</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>9/8</td>
+              </tr>
+              <tr>
+                <td>3></td>
+                <td>6/5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>5/4</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>4/3</td>
+              </tr>
+              <tr>
+                <td>4< ; 5></td>
+                <td>45/32</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>3/2</td>
+              </tr>
+              <tr>
+                <td>6></td>
+                <td>8/5</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>5/3</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>9/5</td>
+              </tr>
+              <tr>
+                <td>7<</td>
+                <td>15/8</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>2/1</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
